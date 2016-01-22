@@ -1288,6 +1288,8 @@ function install_monasca_keystone_client {
     sudo chmod 0700 /usr/local/bin/create_monasca_service.py
 
 
+    OS_PROJECT_NAME=demo
+
     if [[ ${SERVICE_HOST} ]]; then
 
       sudo /opt/monasca/bin/python /usr/local/bin/create_monasca_service.py ${SERVICE_HOST} ${OS_USERNAME} ${OS_PASSWORD} ${OS_PROJECT_NAME} ${SERVICE_TOKEN}
