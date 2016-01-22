@@ -144,7 +144,6 @@ def main(argv):
     username = argv[1]
     password = argv[2]
     #tenant_name = argv[3]
-    tenant_name = 'demo'
     token = get_token(url, cacert, username, password, tenant_name)
 
   key = client.Client(token=token, endpoint=url, cacert=cacert)
